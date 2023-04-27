@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+
+</head>
+
+<body>
+
+    <h1>Java Script Tutorial</h1>
+    <div id="firstcontainer" class="container">
+        <button id="click" onclick="clicked()">Click Me </button>
+        <p>This is a paragrph for events class </p>
+    </div>
+    <div class="container">
+        <p>This is a paragraph</p>
+    </div>
+
+
+
+    <script>
+        function clicked(){
+            console.log("The button was clicked")
+        }
+        window.onload= function(){
+            console.log('The document was uploaded')
+        }
+        
+        
+        let prevHTML = document.querySelectorAll('.container')[1].innerHTML;
+        firstcontainer.addEventListener('click',function(){
+            document.querySelectorAll('.container')[1].innerHTML = prevHTML;
+            console.log("Clicked");
+        })
+        
+        firstcontainer.addEventListener('mouseover',function(){
+            document.querySelectorAll('.container')[1].innerHTML = "<b> We have clicked </b>";
+            console.log("Moused");
+        })
+        
+        // firstcontainer.addEventListener('mouseout',function(){
+        //     console.log("OUT Moused")
+        // })
+
+    </script>
+</body>
+
+</html>

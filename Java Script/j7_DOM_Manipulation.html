@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            padding: 30px;
+        }
+        .container{
+            background-color: pink;
+        }
+        .container1{
+            background-color: black;
+            color: white;
+        }
+
+        .bg-primary{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Java Script Tutorial</h1>
+    <div id="firstcontainer" class="container">
+        <button id="click">Click Me</button>
+    </div>
+    <div class="container1">
+        <p>This is a paragraph</p>
+    </div>
+
+
+    <script>
+
+        let elem = document.getElementById('click');
+        // console.log(elem);
+        
+        let elemClass = document.getElementsByClassName("container1");
+        console.log(elemClass);
+
+        // elemClass[0].style.background = "yellow";
+        elemClass[0].classList.add("bg-primary");
+
+        console.log(elem.innerHTML);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        nav {
+            background-color: black;
+            color: white;
+            height: 7vh;
+            /* text-align: center; */
+        }
+
+        #img {
+            height: 200px;
+            width: 90vw;
+            padding-left: 70px;
+            padding-right: 5px;
+        }
+
+        header {
+            padding-bottom: 12px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            padding: 20px 20px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: space-between;
+            /* padding-top: ; */
+        }
+
+        #background {
+            width: 40vw;
+        }
+
+        .box1 {
+            background-color: rgb(255, 0, 255);
+            border: 5px solid black;
+            /* flex-grow: 4; */
+            width: 40vw;
+            height: 39vh;
+            float: right;
+        }
+
+        .box2 {
+            background-color: pink;
+            border: 5px solid black;
+            /* flex-grow: 2; */
+            float: right;
+            width: 40vw;
+            height: 40vh;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>This</li>
+                <li>That</li>
+                <li>Those</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <img id="img" src="image.jpg" alt="img">
+
+        <div class="container">
+            <div class="box1"><img id="background" src="Background.jpeg" alt=""></div>
+            <div class="box2"><img id="background" src="Background.jpeg" alt=""></div>
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ad voluptatum. Fugiat laudantium dolore
+            labore? Exercitationem recusandae earum quisquam, cupiditate odio minima maiores ipsam? Provident sequi,
+            ipsa, odit laudantium voluptates repellat cum aliquid omnis minus debitis deleniti perspiciatis fugiat,
+            labore voluptatem nostrum? Natus rem, cupiditate sit eligendi nisi ipsa aperiam exercitationem a libero
+            explicabo.
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Java Script Tutorial</h1>
+    <div id="firstcontainer" class="container">
+        <button id="click" onclick="clicked()">Click Me </button>
+        <p>This is a paragrph for events class </p>
+    </div>
+    <div class="container">
+        <p>This is a paragraph</p>
+    </div>
+
+    <script>
+        logit = () => {
+            document.querySelectorAll('.container')[1].innerHTML = "<b> Set interval fired </b>"
+            console.log("I am your log");
+        }
+        // clr = setTimeout(logit, 5000)
+        clr = setInterval(logit, 2000)
+    </script>
+</body>
+
+</html>
